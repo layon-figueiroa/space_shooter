@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2gmyn5bot2t5"]
+
+[ext_resource type="Script" uid="uid://b0fujswidk2yq" path="res://scripts/ship.gd" id="1_2gnfn"]
+[ext_resource type="Texture2D" uid="uid://bkaw3tp0gmw6w" path="res://assets/Sprites/playerShip2_blue.png" id="1_q631a"]
+
+[node name="Ship" type="CharacterBody2D"]
+script = ExtResource("1_2gnfn")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_q631a")
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1, -18, 4, -9, 27, 3, 18, 16, 8, 14, 6, 17, -6, 17, -8, 14, -18, 16, -27, 3, -4, -9, -1, -18)
+
+[node name="Guns" type="Node" parent="."]
+
+[node name="TopGun" type="Marker2D" parent="Guns"]
+position = Vector2(0, -21)
+
+[node name="RightGun" type="Marker2D" parent="Guns"]
+position = Vector2(25, -1)
+
+[node name="LeftGun" type="Marker2D" parent="Guns"]
+position = Vector2(-25, -2)
