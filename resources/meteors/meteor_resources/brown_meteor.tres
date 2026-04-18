@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Meteor_Data" load_steps=3 format=3 uid="uid://db3g0wscbqhw8"]
+
+[ext_resource type="Script" uid="uid://ddrkkiul5vmxx" path="res://resources/meteors/data/meteor_data.gd" id="1_btiej"]
+[ext_resource type="Texture2D" uid="uid://maqa05oqg71v" path="res://assets/Sprites/Meteors/meteorBrown_big4.png" id="2_pq6it"]
+
+[resource]
+script = ExtResource("1_btiej")
+speed = 400.0
+texture = ExtResource("2_pq6it")
+metadata/_custom_type_script = "uid://ddrkkiul5vmxx"

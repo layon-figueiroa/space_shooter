@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6q30rl2g4krq"]
+
+[ext_resource type="Script" uid="uid://bhkqi6icftqa3" path="res://scripts/meteor_manager.gd" id="1_c8k3t"]
+[ext_resource type="PackedScene" uid="uid://3wuevqra8cjw" path="res://scenes/meteor.tscn" id="2_62l8q"]
+
+[node name="MeteorManager" type="Node2D"]
+script = ExtResource("1_c8k3t")
+meteor_scene = ExtResource("2_62l8q")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
